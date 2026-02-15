@@ -16,13 +16,14 @@ public class SphereCollisionDetector : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Check if we hit a wall or obstacle (not the ground)
-        bool isWallCollision = collision.gameObject.CompareTag("Wall") || 
-                               collision.gameObject.CompareTag("Obstacle") ||
-                               !collision.gameObject.CompareTag("Ground");
+        // Don't explode if we hit the ground (only if ground is properly tagged)
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            return;
+        }
         
-        // Explode if moving fast enough and hit a wall/obstacle
-        if (!isExploded && rb.linearVelocity.magnitude > explosionSpeedThreshold && isWallCollision)
+        // Explode if moving fast enough and didn't hit ground
+        if (!isExploded && rb.linearVelocity.magnitude > explosionSpeedThreshold)
         {
             if (explodeHandler != null)
             {
