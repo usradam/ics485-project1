@@ -5,7 +5,7 @@ using UnityEngine;
 public class CarMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody theRB;
-    [SerializeField] float forwardAccel = 8f, reverseAccel = 4f, maxSpeed = 50f, turnStrength = 180, gravityForce = 10f, dragOnGround = 3f;
+    [SerializeField] float forwardAccel = 8f, reverseAccel = 4f, maxSpeed = 70f, turnStrength = 180, gravityForce = 10f, dragOnGround = 3f;
 
     private float speedInput, turnInput;
 
@@ -87,6 +87,11 @@ public class CarMovement : MonoBehaviour
             {
                 theRB.AddForce(transform.forward * speedInput);
                 emissionRate = maxEmission;
+            }
+            
+            if (theRB.linearVelocity.magnitude > maxSpeed)
+            {
+                theRB.linearVelocity = theRB.linearVelocity.normalized * maxSpeed;
             }
         }
         else
