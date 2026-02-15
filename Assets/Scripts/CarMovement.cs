@@ -23,7 +23,7 @@ public class CarMovement : MonoBehaviour
     [SerializeField] float maxEmission = 25f;
     private float emissionRate;
 
-
+    private bool isExploded = false;
 
     void Start()
     {
@@ -32,6 +32,12 @@ public class CarMovement : MonoBehaviour
 
     void Update()
     {
+        // Stop accepting input if exploded
+        if (isExploded)
+        {
+            return;
+        }
+
         speedInput = 0f;
         if (Input.GetAxis("Vertical") > 0)
         {
@@ -56,6 +62,12 @@ public class CarMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Stop physics if exploded
+        if (isExploded)
+        {
+            return;
+        }
+
         grounded = false;
         RaycastHit hit;
 
@@ -87,6 +99,26 @@ public class CarMovement : MonoBehaviour
         {
             var emissionModule = part.emission;
             emissionModule.rateOverTime = emissionRate;
+        }
+    }
+
+    // Called from SphereCollisionDetector when explosion is triggered
+    public void SetExploded()
+    {
+        isExploded = true;
+        
+        // Stop all dust trail particles
+        if (dustTrail != null)
+        {
+            foreach (ParticleSystem part in dustTrail)
+            {
+                if (part != null)
+                {
+                    part.Stop();
+                    var emissionModule = part.emission;
+                    emissionModule.rateOverTime = 0;
+                }
+            }
         }
     }
 }
