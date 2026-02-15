@@ -307,6 +307,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19e72be5cf66a974ab96e7fc7b938963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  gameOverText: {fileID: 0}
+  gameOverCanvasGroup: {fileID: 0}
+  collisionDetector: {fileID: 0}
+  fadeInDuration: 1
+  backgroundPanel: {fileID: 0}
 --- !u!1 &270853444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,8 +1656,8 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: 1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SphereCollisionDetector : MonoBehaviour
@@ -8,6 +9,8 @@ public class SphereCollisionDetector : MonoBehaviour
     
     private Rigidbody rb;
     private bool isExploded = false;
+
+    public event Action<SphereCollisionDetector> OnPlayerCrashed;
 
     void Start()
     {
@@ -40,6 +43,7 @@ public class SphereCollisionDetector : MonoBehaviour
                 {
                     carMovement.SetExploded();
                 }
+                OnPlayerCrashed?.Invoke(this);
             }
         }
     }
