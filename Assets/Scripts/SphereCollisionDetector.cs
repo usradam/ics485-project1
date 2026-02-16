@@ -19,13 +19,13 @@ public class SphereCollisionDetector : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Don't explode if we hit the ground (only if ground is properly tagged)
-        if (collision.gameObject.CompareTag("Ground"))
+        // Don't explode if we hit the ground or an enemy
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Enemy"))
         {
             return;
         }
         
-        // Explode if moving fast enough and didn't hit ground
+        // Explode if moving fast enough and didn't hit ground or enemy
         if (!isExploded && rb.linearVelocity.magnitude > explosionSpeedThreshold)
         {
             if (explodeHandler != null)

@@ -25,10 +25,13 @@ public class CarMovement : MonoBehaviour
     private float emissionRate;
 
     private bool isExploded = false;
+    
+    private AudioSource engineSound;
 
     void Start()
     {
         theRB.transform.parent = null;
+        engineSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -88,6 +91,20 @@ public class CarMovement : MonoBehaviour
             {
                 theRB.AddForce(transform.forward * speedInput);
                 emissionRate = maxEmission;
+                
+                // Play engine sound
+                if (engineSound != null && !engineSound.isPlaying)
+                {
+                    engineSound.Play();
+                }
+            }
+            else
+            {
+                // Stop engine sound when not moving
+                if (engineSound != null && engineSound.isPlaying)
+                {
+                    engineSound.Stop();
+                }
             }
             
             if (theRB.linearVelocity.magnitude > maxSpeed)
@@ -99,6 +116,12 @@ public class CarMovement : MonoBehaviour
         {
             theRB.linearDamping = 0.1f;
             theRB.AddForce(Vector3.up * -gravityForce * 100);
+            
+            // Stop engine sound when airborne
+            if (engineSound != null && engineSound.isPlaying)
+            {
+                engineSound.Stop();
+            }
         }
 
         foreach(ParticleSystem part in dustTrail)
@@ -112,6 +135,12 @@ public class CarMovement : MonoBehaviour
     public void SetExploded()
     {
         isExploded = true;
+        
+        // Stop engine sound
+        if (engineSound != null && engineSound.isPlaying)
+        {
+            engineSound.Stop();
+        }
         
         // Stop all dust trail particles
         if (dustTrail != null)
