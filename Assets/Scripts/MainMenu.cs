@@ -16,6 +16,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] CarMovement carMovement;
     [SerializeField] Rigidbody sphereRigidbody;
     
+    [Header("Enemy Counter")]
+    [SerializeField] TextMeshProUGUI enemyCounterText;
+    
     private int totalEnemies;
     private int enemiesKilled = 0;
 
@@ -37,9 +40,22 @@ public class MainMenu : MonoBehaviour
             winCanvasGroup.alpha = 0;
         }
         
+        // Hide enemy counter initially
+        if (enemyCounterText != null)
+        {
+            enemyCounterText.gameObject.SetActive(false);
+        }
+        
         // Count total enemies in the scene
         totalEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
         Debug.Log($"Total enemies found: {totalEnemies}");
+        
+        // Only show counter if we're in the game scene (not main menu which is scene 0)
+        if (SceneManager.GetActiveScene().buildIndex > 0 && enemyCounterText != null)
+        {
+            enemyCounterText.gameObject.SetActive(true);
+            UpdateEnemyCounter();
+        }
     }
 
     void OnEnable()
@@ -118,9 +134,20 @@ public class MainMenu : MonoBehaviour
         enemiesKilled++;
         Debug.Log($"Enemy killed! {enemiesKilled}/{totalEnemies}");
         
+        // Update the counter display
+        UpdateEnemyCounter();
+        
         if (enemiesKilled >= totalEnemies)
         {
             ShowWinScreen();
+        }
+    }
+    
+    private void UpdateEnemyCounter()
+    {
+        if (enemyCounterText != null)
+        {
+            enemyCounterText.text = $"Enemies Killed: {enemiesKilled}/{totalEnemies}";
         }
     }
     
