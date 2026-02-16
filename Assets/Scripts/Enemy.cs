@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] Vector3 pointB;
     [SerializeField] float speed = 2f;
     [SerializeField] bool useStartPositionAsPointA = true;
+    [SerializeField] AudioClip hitSound;
+    [SerializeField] float hitSoundVolume = 1f;
     
     private bool movingToB = true;
 
@@ -36,6 +38,12 @@ public class Enemy : MonoBehaviour
         // Check if hit by the player (sphere/car)
         if (collision.gameObject.CompareTag("Player"))
         {
+            // Play hit sound at this position
+            if (hitSound != null)
+            {
+                AudioSource.PlayClipAtPoint(hitSound, transform.position, hitSoundVolume);
+            }
+            
             // Notify game manager
             MainMenu mainMenu = FindObjectOfType<MainMenu>();
             if (mainMenu != null)
