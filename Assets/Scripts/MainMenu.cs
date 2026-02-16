@@ -39,6 +39,7 @@ public class MainMenu : MonoBehaviour
         
         // Count total enemies in the scene
         totalEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        Debug.Log($"Total enemies found: {totalEnemies}");
     }
 
     void OnEnable()
@@ -109,6 +110,7 @@ public class MainMenu : MonoBehaviour
     public void OnEnemyKilled()
     {
         enemiesKilled++;
+        Debug.Log($"Enemy killed! {enemiesKilled}/{totalEnemies}");
         
         if (enemiesKilled >= totalEnemies)
         {
