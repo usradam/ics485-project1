@@ -6704,7 +6704,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &53584562
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24272,7 +24272,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &680279960
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34452,7 +34452,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &844174609
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41075,7 +41075,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &1129332217
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -43141,7 +43141,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &1227967937
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -47353,7 +47353,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!1 &1423029969
 GameObject:
   m_ObjectHideFlags: 0
@@ -51418,7 +51418,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &1595768794
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -53674,7 +53674,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &1679594756
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58638,7 +58638,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &1869806739
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -64355,7 +64355,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 200
+  hitSoundVolume: 300
 --- !u!136 &2084704658
 CapsuleCollider:
   m_ObjectHideFlags: 0
