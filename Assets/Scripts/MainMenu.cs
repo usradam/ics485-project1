@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] Rigidbody sphereRigidbody;
     
     [Header("Enemy Counter")]
+    [SerializeField] GameObject enemyCounterPanel;
     [SerializeField] TextMeshProUGUI enemyCounterText;
     
     private int totalEnemies;
@@ -41,9 +42,9 @@ public class MainMenu : MonoBehaviour
         }
         
         // Hide enemy counter initially
-        if (enemyCounterText != null)
+        if (enemyCounterPanel != null)
         {
-            enemyCounterText.gameObject.SetActive(false);
+            enemyCounterPanel.SetActive(false);
         }
         
         // Count total enemies in the scene
@@ -51,9 +52,9 @@ public class MainMenu : MonoBehaviour
         Debug.Log($"Total enemies found: {totalEnemies}");
         
         // Only show counter if we're in the game scene (not main menu which is scene 0)
-        if (SceneManager.GetActiveScene().buildIndex > 0 && enemyCounterText != null)
+        if (SceneManager.GetActiveScene().buildIndex > 0 && enemyCounterPanel != null)
         {
-            enemyCounterText.gameObject.SetActive(true);
+            enemyCounterPanel.SetActive(true);
             UpdateEnemyCounter();
         }
     }
