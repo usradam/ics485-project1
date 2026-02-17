@@ -6704,7 +6704,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &53584562
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11519,7 +11519,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 1.3894653, w: -0.016845703}
+  m_margin: {x: 0, y: 0, z: -54.94861, w: -0.016845703}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11549,7 +11549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 23.840088, y: -26.50998}
+  m_AnchoredPosition: {x: 23, y: -22}
   m_SizeDelta: {x: 537.5518, y: 78.7827}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &261537844
@@ -12740,7 +12740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23, y: -13}
+  m_AnchoredPosition: {x: 0, y: -13}
   m_SizeDelta: {x: 791.287, y: 123.0492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292062847
@@ -12763,7 +12763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU WIN
+  m_text: YOU WIN!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f3882f1095fc79741b2c9090989ce35f, type: 2}
   m_sharedMaterial: {fileID: -2923192558526985280, guid: f3882f1095fc79741b2c9090989ce35f, type: 2}
@@ -19052,7 +19052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 41.606262}
+  m_AnchoredPosition: {x: 0, y: -56}
   m_SizeDelta: {x: 1241.1523, y: 809.5217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &527253738
@@ -22127,7 +22127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 41.606262}
+  m_AnchoredPosition: {x: 0, y: -56}
   m_SizeDelta: {x: 1241.1523, y: 809.5217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &631288580
@@ -23751,7 +23751,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 586.14966, y: 119.82001}
+  m_SizeDelta: {x: 615.3611, y: 119.82}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &665008991
 MonoBehaviour:
@@ -24272,7 +24272,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &680279960
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34452,7 +34452,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &844174609
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41075,7 +41075,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &1129332217
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -43141,7 +43141,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &1227967937
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -47353,7 +47353,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!1 &1423029969
 GameObject:
   m_ObjectHideFlags: 0
@@ -49156,7 +49156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506733631}
   m_Layer: 0
-  m_Name: Door Lights
+  m_Name: House Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51418,7 +51418,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &1595768794
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -53674,7 +53674,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &1679594756
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58638,7 +58638,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &1869806739
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -64355,7 +64355,7 @@ MonoBehaviour:
   speed: 2
   useStartPositionAsPointA: 1
   hitSound: {fileID: 8300000, guid: 0ac4ebb9e38449e44a3f10531f492d85, type: 3}
-  hitSoundVolume: 300
+  hitSoundVolume: 600
 --- !u!136 &2084704658
 CapsuleCollider:
   m_ObjectHideFlags: 0
